@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1791CA85-3128-4778-9733-80BB51A6457F</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++7763</key>
+		<string>http://csipsimple.googlecode.com/svn/trunk/CSipSimple/jni/g729/sources/src</string>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++9811</key>
+		<string>http://csipsimple.googlecode.com/svn/trunk/CSipSimple/jni/g729/sources/include</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++7763</key>
+		<string>src/</string>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++9811</key>
+		<string>include/</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++7763</key>
+		<string>http://csipsimple.googlecode.com/svn</string>
+		<key>9f815046-5998-e9c0-b7e2-ac03a23edfa4++9811</key>
+		<string>http://csipsimple.googlecode.com/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://csipsimple.googlecode.com/svn/trunk/CSipSimple/jni/g729/sources/src</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9f815046-5998-e9c0-b7e2-ac03a23edfa4++7763</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9f815046-5998-e9c0-b7e2-ac03a23edfa4++9811</string>
+			<key>IDESourceControlWCCName</key>
+			<string>include</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9f815046-5998-e9c0-b7e2-ac03a23edfa4++7763</string>
+			<key>IDESourceControlWCCName</key>
+			<string>src</string>
+		</dict>
+	</array>
+</dict>
+</plist>
