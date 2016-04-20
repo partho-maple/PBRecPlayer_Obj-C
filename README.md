@@ -7,3 +7,7 @@ This is based on:
 
 
 If you don't know anything about digital audio or the core audio framework, I advice you read Apple's "Core Audio overview" to get some idea of what you're doing. Last located at: http://developer.apple.com/library/ios/#documentation/MusicAudio/Conceptual/CoreAudioOverview/Introduction/Introduction.html
+
+
+
+N.B.  A swift version will be available soon.
