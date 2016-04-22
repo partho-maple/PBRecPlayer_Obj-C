@@ -59,6 +59,7 @@
 @property(nonatomic, readwrite) bool isLocalRingToneEnabled;
 @property(nonatomic, readwrite) bool isBufferClean;
 
++ (AudioHandler *) sharedInstance;
 - (void) start;
 - (void) stop;
 - (void) processAudio: (AudioBufferList*) bufferList;
@@ -70,5 +71,7 @@
 
 @end
 
-// setup a global iosAudio variable, accessible everywhere
-extern AudioHandler* iosAudio;
+
+
+
+

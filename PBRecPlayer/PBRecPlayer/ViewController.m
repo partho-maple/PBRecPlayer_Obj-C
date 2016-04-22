@@ -33,8 +33,7 @@ unsigned char byteRTPDataToSend[500];
     
     self.isRunning = NO;
     self.iRTPDataLen = 0;
-    iosAudio = [[AudioHandler alloc] init];
-    [iosAudio setAudioDelegate:self];
+    [[AudioHandler sharedInstance] setAudioDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,14 +47,14 @@ unsigned char byteRTPDataToSend[500];
 
 -(void) StartAudio
 {
-    [iosAudio start];
-    [iosAudio resetRTPQueue];
+    [[AudioHandler sharedInstance] start];
+    [[AudioHandler sharedInstance] resetRTPQueue];
     
 }
 -(void) StopAudio
 {
-    [iosAudio stop];
-    [iosAudio resetRTPQueue];
+    [[AudioHandler sharedInstance] stop];
+    [[AudioHandler sharedInstance] resetRTPQueue];
 }
 
 
@@ -67,7 +66,7 @@ unsigned char byteRTPDataToSend[500];
     
     memcpy(receivedRTPData, pChRtp, len);
     receivedRTPDataLength = len;
-    [iosAudio receiverAudio:receivedRTPData WithLen:receivedRTPDataLength];
+    [[AudioHandler sharedInstance] receiverAudio:receivedRTPData WithLen:receivedRTPDataLength];
 }
 
 
@@ -101,7 +100,6 @@ unsigned char byteRTPDataToSend[500];
         [self StartAudio];
         [self.startStopButton setTitle:@"STOP" forState:UIControlStateNormal];
     }
-    [self StartAudio];
 }
 
 @end

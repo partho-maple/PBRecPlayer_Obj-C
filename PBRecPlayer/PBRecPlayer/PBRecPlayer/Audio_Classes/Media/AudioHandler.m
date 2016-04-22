@@ -12,13 +12,12 @@
 #define kOutputBus 0
 #define kInputBus 1
 
-AudioHandler* iosAudio;
 G729Wrapper* g729EncoderDecoder;
+static AudioHandler *sharedInstance = nil;
 
 void checkStatus(int status){
 	if (status) {
 		printf("Status not 0! %d\n", status);
-        //		exit(1);
 	}
 }
 
@@ -32,6 +31,17 @@ void checkStatus(int status){
 short shortArray[1024];
 short receivedShort[1024];
 NSThread* recorderThread;
+
+
+
++(AudioHandler *)sharedInstance
+{
+    if (sharedInstance == nil) {
+        sharedInstance = [[AudioHandler alloc] init];
+    }
+    return sharedInstance;
+}
+
 
 /**
  Initialize the audioUnit and allocate our own temporary buffer.
@@ -372,7 +382,7 @@ static OSStatus recordingCallback(void *inRefCon,
 	
 	
     OSStatus status;
-    status = AudioUnitRender([iosAudio audioUnit],
+    status = AudioUnitRender([sharedInstance audioUnit],
                              ioActionFlags,
                              inTimeStamp,
                              inBusNumber,
@@ -382,7 +392,7 @@ static OSStatus recordingCallback(void *inRefCon,
 	
     // Now, we have the samples we just read sitting in buffers in bufferList
 	// Process the new data
-	[iosAudio processAudio:&bufferList];
+	[sharedInstance processAudio:&bufferList];
     
 	
 	// release the malloc'ed data in the buffer we created earlier
@@ -404,7 +414,7 @@ static OSStatus playbackCallback(void *inRefCon,
     // Notes: ioData contains buffers (may be more than one!)
     // Fill them up as much as you can. Remember to set the size value in each buffer to match how
     // much data is in the buffer.
-    AudioHandler *THIS = iosAudio;
+    AudioHandler *THIS = sharedInstance;
 	
 	for (int i=0; i < ioData->mNumberBuffers; i++) { // in practice we will only ever have 1 buffer, since audio format is mono
 		AudioBuffer buffer = ioData->mBuffers[i];
