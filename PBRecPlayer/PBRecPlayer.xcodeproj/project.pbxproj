@@ -43,7 +43,6 @@
 		DB418E2819EBA48700432836 /* G729CodecNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB418DA819EBA48700432836 /* G729CodecNative.cpp */; };
 		DB418E4F19EBA4EB00432836 /* G729Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB418E4C19EBA4EB00432836 /* G729Wrapper.mm */; };
 		DB418E5019EBA4EB00432836 /* AudioHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DB418E4E19EBA4EB00432836 /* AudioHandler.m */; };
-		DB418E5319EBA50000432836 /* AudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB418E5219EBA50000432836 /* AudioRouter.m */; };
 		DB418E5519EBA52B00432836 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB418E5419EBA52B00432836 /* AudioToolbox.framework */; };
 		DB418E5A19EBA74800432836 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB418E5919EBA74800432836 /* CoreBluetooth.framework */; };
 		DB418F9419EBA9AB00432836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB418F9319EBA9AB00432836 /* UIKit.framework */; };
@@ -188,8 +187,6 @@
 		DB418E4C19EBA4EB00432836 /* G729Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = G729Wrapper.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DB418E4D19EBA4EB00432836 /* AudioHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AudioHandler.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DB418E4E19EBA4EB00432836 /* AudioHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AudioHandler.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		DB418E5119EBA50000432836 /* AudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AudioRouter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DB418E5219EBA50000432836 /* AudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AudioRouter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		DB418E5419EBA52B00432836 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DB418E5919EBA74800432836 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		DB418F9319EBA9AB00432836 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -379,8 +376,6 @@
 			children = (
 				DB418F9719EBD23800432836 /* BufferQueue.h */,
 				DB418F9819EBD23800432836 /* BufferQueue.m */,
-				DB418E5119EBA50000432836 /* AudioRouter.h */,
-				DB418E5219EBA50000432836 /* AudioRouter.m */,
 				DB418E4B19EBA4EB00432836 /* G729Wrapper.h */,
 				DB418E4C19EBA4EB00432836 /* G729Wrapper.mm */,
 				DB418E4D19EBA4EB00432836 /* AudioHandler.h */,
@@ -561,7 +556,6 @@
 				771F3EEE1CC8063100916484 /* basic_op.c in Sources */,
 				DB418E4F19EBA4EB00432836 /* G729Wrapper.mm in Sources */,
 				771F3F0A1CC8063100916484 /* taming.c in Sources */,
-				DB418E5319EBA50000432836 /* AudioRouter.m in Sources */,
 				771F3EF91CC8063100916484 /* g729a_encoder.c in Sources */,
 				DB418DA519EBA45A00432836 /* TPCircularBuffer+AudioBufferList.c in Sources */,
 				771F3EF21CC8063100916484 /* de_acelp.c in Sources */,
