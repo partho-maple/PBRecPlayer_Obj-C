@@ -17,5 +17,6 @@
 -(Boolean) close;
 -(int) encodeWithPCM: (short*) shortArray andSize: (int) size andEncodedG729: (Byte*) byteArray;
 -(int) decodeWithG729: (Byte*) byteArray andSize: (int) size andEncodedPCM: (short*) shortArray;
+
 @end
 
